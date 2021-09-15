@@ -5,6 +5,7 @@ Forum App, with a frontend built in React & Redux and a backend built in Django 
 ```
 ## Live Demo
 **This App uses a Heroku free plan, so I am afraid that it takes time to load the pages.**
+
 Check out [FRONTEND LIVE DEMO](https://frontend-mini-ecommerce.herokuapp.com/) here!!
 
 Check out [API LIVE DEMO](https://backend-mini-ecommerce.herokuapp.com/posts/) here!!
