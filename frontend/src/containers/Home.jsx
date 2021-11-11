@@ -1,37 +1,38 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Item from "../components/Common/Item";
+import { fetchItems } from "../reducks/items/operations";
+import { getItems } from "../reducks/items/selectors";
 import { useDispatch, useSelector } from "react-redux";
-import Loading from "../assets/img/loading.gif";
-import PostForm from "../components/Posts/PostForm";
-import Post from "../components/Posts/Post";
-import { fetchPosts } from "../reducks/posts/operations";
-import { getPosts } from "../reducks/posts/selectors";
+import MainImage from "../components/Common/MainImage";
+import { fetchCarts } from "../reducks/carts/operations";
 
 const Home = () => {
-  const dispatch = useDispatch();
   const selector = useSelector((state) => state);
-  const posts = getPosts(selector);
+  const dispatch = useDispatch();
+  const items = getItems(selector);
 
   useEffect(() => {
-    dispatch(fetchPosts());
+    dispatch(fetchItems());
+    if (localStorage.getItem("LOGIN_USER_KEY")) {
+      dispatch(fetchCarts());
+      console.log(items);
+    }
   }, []);
 
   return (
-    <section class="content">
-      <PostForm />
-      <section class="posts">
-        {posts.length > 0 ? (
-          <ul>
-            {posts.map((post) => (
-              <Post key={post.id} post={post} />
+    <>
+      <MainImage />
+      <section class="main">
+        <ul class="items">
+          {items &&
+            items.map((item) => (
+              <li>
+                <Item key={item.id} item={item} />
+              </li>
             ))}
-          </ul>
-        ) : (
-          <div class="loading">
-            <img src={Loading} class="" />
-          </div>
-        )}
+        </ul>
       </section>
-    </section>
+    </>
   );
 };
 

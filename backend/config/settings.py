@@ -29,9 +29,9 @@ SECRET_KEY = 'django-insecure-ov#r^^&xv&^0vmc(zj&h_t^$*52@8jicn=%*z*@s-=li!s_p@=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
-CORS_ALLOW_ALL_ORIGINS = True
-
+ALLOWED_HOSTS = ['127.0.0.1', 'forum-prod-api.herokuapp.com']
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://frontend-electric-views.herokuapp.com']
 
 # Application definition
 
@@ -46,6 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.posts',
+    'apps.users', 
+    'apps.carts', 
+    'apps.orders',
+    'apps.items',
     'cloudinary',
     'django_filters',
 ]
@@ -90,21 +94,21 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd65rsp9ivrgn9j',
-        'USER': 'iobzthavwssohy',
+        'NAME': 'de2dfvem42krij',
+        'USER': 'fozuxwpcescfyf',
         'PORT': 5432,
-        'HOST': 'ec2-34-227-120-94.compute-1.amazonaws.com',
-        'PASSWORD': '421c1035b6293cc35f395f14c53e695e1405640458c12bf05e7ceb0489cc2510',
+        'HOST': 'ec2-52-205-45-219.compute-1.amazonaws.com',
+        'PASSWORD': '7bb13323d080d66bfaf110d4c92cb42c4bdee4829a7bba8c523d072c8daa8d1e',
     }
 }
 
 # Local Database
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # Heroku PostgreSQL Database
 django_heroku.settings(locals())
@@ -155,9 +159,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 cloudinary.config(
-    cloud_name="techis",
-    api_key="886187759951178",
-    api_secret="WGcWrWfkPlxdOCdlFaLTdjSNtfo",
+    cloud_name="www-techis-io",
+    api_key="891747999686865",
+    api_secret="seWq_dLQRcb7O5eMY-XdAuznU_w",
     secure=True
 )
 
