@@ -639,9 +639,7 @@ td {
 .content li {
   list-style: none;
 }
-.content .item-image {
-  width: 100%;
-}
+
 
 .message .color {
   font-weight: bold;
