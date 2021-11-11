@@ -19,7 +19,7 @@ body {
 .header .flex {
   display: flex;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
 li img{
   width:110px;
 }
