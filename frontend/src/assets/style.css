@@ -19,7 +19,11 @@ body {
 .header .flex {
   display: flex;
 }
-
+@media screen and (max-width: 500px) {
+li img{
+  width:110px;
+}
+}
 .electric {
   font-weight: bold;
   font-family: Spartan;
