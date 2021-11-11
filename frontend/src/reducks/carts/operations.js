@@ -65,8 +65,12 @@ export const increaseCart = (cart_id) => {
 export const decreaseCart = (cart_id) => {
   return async (dispatch, getState) => {
     let prevCarts = getState().carts.list;
+    //console.log('cart_id',cart_id);
+    console.log("prevCarts",prevCarts);
     let matchedCarts = prevCarts.filter((cart) => cart.id == cart_id);
+    //console.log(matchedCarts)
     let nextSelectedCount = matchedCarts[0].quantity - 1;
+   
     if (nextSelectedCount > 0) {
       // if quantity is more than 0, update
       return api

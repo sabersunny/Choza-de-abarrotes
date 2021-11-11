@@ -7,17 +7,17 @@ import {
 } from "../../reducks/carts/operations";
 import { getCarts, getSubtotal } from "../../reducks/carts/selectors";
 
-const CartItem = ({ cart, quantity }) => {
+const CartItem = ({ cart, quantity, cartId }) => {
   const selector = useSelector((state) => state);
   const dispatch = useDispatch();
   const carts = getCarts(selector);
   const subtotal = getSubtotal(selector);
-
+console.log("cart",cart);
   const clickPlusCart = () => {
-    dispatch(increaseCart(cart.id));
+    dispatch(increaseCart(cartId));
   };
   const clickMinusCart = () => {
-    dispatch(decreaseCart(cart.id));
+    dispatch(decreaseCart(cartId));
   };
 
   useEffect(() => {
