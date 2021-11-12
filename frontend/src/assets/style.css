@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #d9e3d6;
   margin: 0;
   padding: 0;
 }
@@ -19,9 +19,11 @@ body {
 .header .flex {
   display: flex;
 }
-@media screen and (max-width: 450px) {
-li img{
-  width:110px;
+@media screen and  (max-width: 450px) {
+  ul.items li img.item-image {
+    padding-left: 10px;
+  width: 182px;
+  height: 129px;
 }
 }
 .electric {
@@ -149,22 +151,28 @@ header .header-links .img img {
 }
 
 ul.items {
-  padding: 20px 0;
+ 
 }
+.items
+{
 
+
+background-color: #d9e3d6;
+}
 ul.items li {
   list-style: none;
- padding-top: 20px;
-  padding-bottom: 60px;
+
 }
 
 ul.items li img.item-image {
   
   height: fit-content;
+  width: 279px;
+  height: 174px;
 }
 
 ul.items li .info {
-  width: 70%;
+  width: 74%;
   position: relative;
   padding: 5px 15px;
 }
@@ -173,6 +181,9 @@ ul.items li .info .name {
   font-weight: bold;
   font-size: 20px;
   color: #3e742d;
+  position: absolute;
+  bottom: 161px;
+  left: 290px;
 }
 
 ul.items li .info .name-bottom {
@@ -188,7 +199,7 @@ ul.items li .info .info-bottom {
   position: absolute;
   left: 43%;
   bottom: 10px;
-  width: 90%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
 }
@@ -230,7 +241,7 @@ ul.items li .info .info-bottom .number .minus {
 }
 
 @media screen and (max-width: 450px) {
-  
+ 
   .main-visual img {
     height: 250px;
   }
@@ -243,12 +254,15 @@ ul.items li .info .info-bottom .number .minus {
     margin: 0 2% 0 2%;
   }
   ul.items {
-    padding: 0;
+    padding: 11px;
   }
 
   ul.items li .info .name {
     font-weight: bold;
     font-size: 14px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
   }
 
   ul.items li .info .name-bottom .count {
@@ -260,7 +274,7 @@ ul.items li .info .info-bottom .number .minus {
     position: relative;
     padding: 5px 0 0 0;
     left: 29%;
-    bottom: 29px;
+    top:4px;
   }
 
   ul.items li .info .info-bottom .price {
@@ -285,7 +299,7 @@ ul.items li .info .info-bottom .number .minus {
 }
 
 footer {
-  position: fixed;
+
   bottom: 0;
   left: 0%;
   display: flex;
@@ -648,7 +662,7 @@ td {
 /*********************************************/
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   overflow: hidden;
   background-color: #0f;
