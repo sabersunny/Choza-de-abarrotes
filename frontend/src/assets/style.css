@@ -209,6 +209,8 @@ ul.items li .info .info-bottom .price {
   font-size: 20px;
   color: #393b39;
   font-weight: lighter;
+  position: relative;
+  left:4%;
 }
 
 ul.items li .info .info-bottom .add {
