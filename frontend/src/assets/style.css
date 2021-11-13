@@ -197,7 +197,7 @@ ul.items li .info .name-bottom .count {
 
 ul.items li .info .info-bottom {
   position: absolute;
-  left: 43%;
+  left: 33%;
   bottom: 10px;
   width: 85%;
   display: flex;
@@ -214,18 +214,22 @@ ul.items li .info .info-bottom .price {
 ul.items li .info .info-bottom .add {
   border: 1px solid #64b94b;
   font-size: 20px;
-  padding: 5px 25px;
+  padding: 5px 32px;
   cursor: pointer;
   background-color: #64b94b;
   color: #ffffff;
+  position: relative;
+  left:15%;
 }
 
 ul.items li .info .info-bottom .number {
   border: 1px solid #64b94b;
   font-size: 20px;
-  padding: 5px 15px;
+  padding: 5px 32px;
   color: #e4e4e4;
   background-color: #64b94b;
+  position: relative;
+  left:15%;
 }
 
 ul.items li .info .info-bottom .number .plus,
@@ -400,7 +404,7 @@ footer button {
 }
 .popup .popup-inner .popup-preview .input .bold2 {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
   margin: 0 auto;
   width: 36%;
   margin-bottom: 10px;
@@ -424,7 +428,7 @@ footer button {
   margin-top: 10px;
   height: 30px;
   margin: 10px;
-  border-radius: 5%;
+  border-radius: 8px;
   border-style: none;
 }
 
@@ -441,9 +445,9 @@ footer button {
   width: 90%;
   margin-bottom: 20px;
   margin-top: 10px;
-  height: 50px;
+  height: 40px;
   margin: 10px;
-  border-radius: 3%;
+  border-radius: 12px;
   border-style: none;
 }
 .bottom {
@@ -662,10 +666,21 @@ td {
 /*********************************************/
 ul {
   list-style-type: none;
+  margin-left:64px;
+  margin-right:64px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0f;
+}
+@media screen and (max-width: 450px) {
+
+ul {
+  list-style-type: none;
   margin: 10px;
   padding: 0;
   overflow: hidden;
   background-color: #0f;
+}
 }
 
 span {
@@ -708,7 +723,7 @@ li a:hover {
 }
 
 .middle h1 {
-  margin-top: 10%;
+
   text-align: center;
   font-weight: lighter;
     font-family: spartan;
@@ -732,7 +747,7 @@ li a:hover {
   position: relative;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
+ 
 }
 .card-tall .bi {
   position: absolute;
