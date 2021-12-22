@@ -6,9 +6,9 @@ Choza-de-abarrotes, with a frontend built in React & Redux and a backend built i
 
 ## Live Demo
 
-Check out [FRONTEND LIVE DEMO](https://forum-prod-frontend.herokuapp.com/) here!!
+Check out [FRONTEND LIVE DEMO](https://frontend-choza-de-abarrotes.herokuapp.com/) here!!
 
-Check out [API LIVE DEMO](https://forum-prod-api.herokuapp.com/) here!!
+Check out [API LIVE DEMO](https://backend-choza-de-abarrotes.herokuapp.com/) here!!
 
 ## Tech used
 
