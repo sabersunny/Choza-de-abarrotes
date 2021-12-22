@@ -1,12 +1,10 @@
-# Forum App in React & Redux + Django
+# Choza-de-abarrotes
 
 ```
-Forum App, with a frontend built in React & Redux and a backend built in Django API.
+Choza-de-abarrotes, with a frontend built in React & Redux and a backend built in Django API.
 ```
 
 ## Live Demo
-
-**This App uses a Heroku free plan, so I am afraid that it takes time to load the pages.**
 
 Check out [FRONTEND LIVE DEMO](https://forum-prod-frontend.herokuapp.com/) here!!
 
@@ -24,7 +22,7 @@ Check out [API LIVE DEMO](https://forum-prod-api.herokuapp.com/) here!!
 1. Git Clone
 
 ```
-git clone git@github.com:Tech-i-s/techis-wd-forum-django-react.git
+git clone https://github.com/sabersunny/Choza-de-abarrotes.git
 ```
 
 2. Backend setting
